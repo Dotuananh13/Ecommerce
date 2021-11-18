@@ -200,9 +200,11 @@ nav ul li .sub-menu li{
 }
 .img-select{
 	display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
 }
 .img-select .img-item{
-	margin: 5px;
+	width: 32%;
 }
 .img-item-link {
     border: 1px solid transparent;
@@ -210,6 +212,11 @@ nav ul li .sub-menu li{
 }
 .img-item-link.active {
     border-color: red;
+}
+.img-item-link img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
 }
 .img-select .img-item:hover{
 	opacity: 0.7;
