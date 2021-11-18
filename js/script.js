@@ -2,7 +2,7 @@
 var navList = document.getElementById("nav-list");
     navList.style.maxHeight = '0px';
 function menutoggle() {
-   if (navList.style.maxHeight == "0px") 
+   if (navList.style.maxHeight == "0px")
    {
       navList.style.maxHeight = "150px";
    }
@@ -15,7 +15,7 @@ function menutoggle() {
 var navCart = document.getElementById("cart-item");
     navCart.style.maxHeight = '0px';
 function carttoggle() {
-   if (navCart.style.maxHeight == "0px") 
+   if (navCart.style.maxHeight == "0px")
    {
       navCart.style.maxHeight = "600px";
    }
@@ -37,3 +37,14 @@ $(document).on('click', '#search-btn', function(e) {
     }
 })
 // End Js for search
+$(document).ready(function() {
+    $(document).on('click', '.img-item-link', function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            $('.img-item-link').removeClass('active');
+            $(this).addClass('active');
+            const imgSrc = $(this).find('img').attr('src');
+            $('.image-showing').attr('src', imgSrc);
+        }
+    })
+});

@@ -204,6 +204,13 @@ nav ul li .sub-menu li{
 .img-select .img-item{
 	margin: 5px;
 }
+.img-item-link {
+    border: 1px solid transparent;
+    display: inline-block;
+}
+.img-item-link.active {
+    border-color: red;
+}
 .img-select .img-item:hover{
 	opacity: 0.7;
 }
@@ -250,7 +257,7 @@ th{
 }
 td{
 		display: block;
-		width: 80%;	
+		width: 80%;
   	text-align: left;
   	padding: 10px 0px;
 }
