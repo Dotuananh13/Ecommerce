@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecommerce Website</title>
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- HEADER -->
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.jpg" width="230px"></a>
+		</div>
+		<nav>
+			<ul id="nav-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#Product">Product</a>
+					<ul class="sub-menu">
+						<li><a href="#">Toshiba</a></li>
+						<li><a href="#">LG</a></li>
+						<li><a href="#">Panasonic</a></li>
+						<li><a href="#">Sharp</a></li>
+						<li><a href="#">Casper</a></li>
+					</ul>
+				</li>
+				<li><a href="#Support">Support</a></li>
+				<li><a href="#About us">About us</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="icons">
+				<a href="#" class="bx bx-search" id="search-btn"></a>
+				<a href="#" class="bx bx-bell" id="bell-btn"></a>
+				<a href="#" class="bx bx-cart" id="cart-btn" onclick="carttoggle()"></a>
+				<a href="#" class="bx bx-user" id="user-btn"></a>
+				<a href="#" class="bx bx-menu" id="menu-btn" onclick="menutoggle()"></a>
+		</div>
+	</div>
+	<div class="cart-item-container">
+		<div id="cart-item">
+			<div class="item">
+				<a href="#" class='bx bx-x'></a>
+				<img src="img/Airbg.png" width="200px">
+				<div class="content">
+					<h3>Product</h3>
+					<div class="price">15$</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#" class='bx bx-x'></a>
+				<img src="img/Airbg.png" width="200px">
+				<div class="content">
+					<h3>Product</h3>
+					<div class="price">15$</div>
+				</div>
+			</div>
+			<div class="item">
+				<a href="#" class='bx bx-x'></a>
+				<img src="img/Airbg.png" width="200px">
+				<div class="content">
+					<h3>Product</h3>
+					<div class="price">15$</div>
+				</div>
+			</div>
+			<div class="check-now">
+				<button class="btn">Check now</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="navsearch">
+		<div class="search-form">
+			<input type="search" id="search-box" placeholder="Search here...">
+			<label for="search-box" class="bx bx-search" ></label>
+		</div>
+	</div>
+<!-- END HEADER -->
+
+<!-- PRODUCT DETAILS -->
+<div class="img-bg"></div>
+<div class="product-container">
+	<div class="product-left">
+		<div class="product-img">
+			<div class="img-show">
+				<img src="img/Airbg.png" alt="ac img">
+				<img src="img/Airbg.png" alt="ac img">
+				<img src="img/Airbg.png" alt="ac img">
+				<img src="img/Airbg.png" alt="ac img">
+			</div>
+		</div>
+		<div class="img-select">
+			<div class="img-item">
+				<a href="#" data-id = "1">
+					<img src="img/Airbg.png" alt="ac image">
+				</a>
+			</div>
+			<div class="img-item">
+				<a href="#" data-id = "2">
+					<img src="img/Airbg.png" alt="ac image">
+				</a>
+			</div>
+			<div class="img-item">
+				<a href="#" data-id = "3">
+					<img src="img/Airbg.png" alt="ac image">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="product-right">
+		<h1 class="product-title">Product Name</h1>
+		<div class="product-price">
+			<p class="last-price">Old Price</p>
+			<p class="new-price">New Price</p>
+			<p class="brand">Brand : Toshiba</p>
+			<p class="color">Color : White</p>
+		</div>
+		<div class="product-details">
+			<h2 class="description">Description:</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	
+</div>
+<div class="table-details">
+			<table>
+			<tr>
+				<th>Specifications</th>
+			</tr>
+			<tr>
+				<td>Cooling Capacity</td>
+				<td>1.0 HP - 9040 Btu/h</td>
+			</tr>
+			<tr>
+				<td>Use for room</td>
+				<td>12-15m2</td>
+			</tr>
+			<tr>
+				<td>Type</td>
+				<td>Inverter</td>
+			</tr>
+			<tr>
+				<td>Power consumption (kW)</td>
+				<td>0.8kW</td>
+			</tr>
+			<tr>
+				<td>Power Input (Ph/V/Hz)</td>
+				<td>1 Phase, 220-240V, 50Hz</td>
+			</tr>
+			<tr>
+				<td>Maximum Pipe Length</td>
+				<td>15m</td>
+			</tr>
+			<tr>
+				<td>Maximum Elevation Length</td>
+				<td>12m</td>
+			</tr>
+			<tr>
+				<td>Refrigerant/ Liquid Pipe Diameter (mm)</td>
+				<td>6.35 / 9.52</td>
+			</tr>
+			<tr>
+				<th>Indoor unit</th>
+			</tr>
+			<tr>
+				<td>Indoor Unit Model</td>
+				<td>RAS-H10H2KCVG-V</td>
+			</tr>
+			<tr>
+				<td>Indoor Unit Dimensions (mm)</td>
+				<td>250 x 740 x 205 mm</td>
+			</tr>
+			<tr>
+				<td>Indoor Unit Net Weight (Kg)</td>
+				<td>8 kg</td>
+			</tr>
+			<tr>
+				<th>Outdoor unit</th>
+			</tr>
+			<tr>
+				<td>Outdoor Unit Model</td>
+				<td>RAS-H10H2ACVG-V</td>
+			</tr>
+			<tr>
+				<td>Outdoor Unit Dimensions (mm)</td>
+				<td>530 x 598 x 200 mm</td>
+			</tr>
+			<tr>
+				<td>Outdoor Unit Net Weight (Kg)</td>
+				<td>18 kg</td>
+			</tr>
+		</table>
+	</div>
+<!-- END PRODUCT DETAILS -->
+
+<!-- FOOTER -->
+<div class="footer-container">
+	<div class="footer">
+		<div class="footer-content">
+			<div class="footer-item">
+				<div class="f-item">
+					<span>Hotline  <a href="#">1800 255 255</a></span>
+				</div>
+				<div class="f-item">
+					<span>Connect With Us  </span>
+					<a href="#"><i class='bx bxl-facebook-square'></i></a>
+					<a href="#"><i class='bx bxl-twitter'></i></a>
+					<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				</div>
+				<div class="f-item">
+					<span>Get App   </span>
+					<a href="#"><img src="img/dowload.png" width="200px"></a>
+				</div>
+			</div>
+			<div class="footer-text">
+				<span><i class='bx bx-copyright' ></i> 2021 Cosy Air Conditioners . All rights reserved</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END FOOTER -->
+<script src="js/script.js"></script>
+</body>
+</html>
